@@ -1,0 +1,67 @@
+.section-title-services {
+  margin-bottom: 64px;
+}
+
+.services {
+  padding-top: 46px;
+  padding-bottom: 90px;
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &__item {
+      width: 366px;
+      text-align: left;
+      padding-left: 72px;
+      background-repeat: no-repeat;
+      background-position: 20px top;
+
+      &--icon-photo {
+        background-image: url('../images/icon/alarm.svg');
+      }
+      
+      &--icon-design {
+        background-image: url('../images/icon/graph.svg');
+      }
+      
+      &--icon-creativ {
+        background-image: url('../images/icon/monitor.svg');
+      }
+      
+      &--icon-seo {
+        background-image: url('../images/icon/book.svg');
+      }
+      
+      &--icon-css-html {
+        background-image: url('../images/icon/home.svg');
+      }
+      
+      &--icon-digital {
+        background-image: url('../images/icon/aim.svg');
+      }
+
+      &:not(:nth-last-child(-n + 3)) {
+        margin-bottom: 98px;
+      }
+    }
+
+    &__title {
+      font-family: $first-font;
+      font-size: 14px;
+      font-weight: 400;
+      color: $main-font-color;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    
+    &__description {
+      font-family: $second-font;
+      font-size: 15px;
+      line-height: 24px;
+      font-weight: 300;
+      color: $second-font-color;
+    }
+  }
+}

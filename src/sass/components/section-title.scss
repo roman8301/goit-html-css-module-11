@@ -1,0 +1,31 @@
+.section-title__heading {
+  font-family: $first-font;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: $main-font-color;
+
+  &--decor {
+    display: block;
+    font-family: $decorate-font;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: none;
+    color: $main-font-color;
+    padding-bottom: 18px;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: $section-color;
+    margin: 40px auto 0;
+  }
+}
